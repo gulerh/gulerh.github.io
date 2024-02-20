@@ -1,0 +1,217 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url(montserrat.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+  font-size: clamp(15px, 1.4vw, 21px);
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  color: #714302;
+  background-color: #f2eee8;
+}
+
+header {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+header .slogan {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header .slogan p {
+  padding: 0 3rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+header .logo {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header .logo img {
+  width: clamp(300px, 38vw, 500px);
+}
+
+header .logo div {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1rem;
+  margin-right: -1rem;
+}
+
+header .logo div:first-of-type {
+  margin-right: 0;
+  margin-top: 3rem;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  letter-spacing: unset;
+}
+
+button {
+  border: 1px solid;
+  padding: 0.75rem 1.5rem;
+  background-color: #f2eee8;
+  color: #714302;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #ede7de;
+}
+
+main {
+  padding: 1rem;
+}
+
+main p {
+  max-width: 81ch;
+  margin: 1rem auto;
+  line-height: 1.5rem;
+}
+
+.separator {
+  height: 2rem;
+  width: fit-content;
+  margin: 4.5rem auto 2rem auto;
+}
+
+.separator:first-of-type {
+    margin-top: 3rem;
+}
+
+.separator img {
+  height: 100%;
+}
+
+.separator ~ h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.cards {
+  margin: 2.5rem 0;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+  padding: 0.5rem;
+  background-color: #fbfaf8;
+  box-shadow: 0.15rem 0.15rem 0.15rem #bfab8d;
+  line-height: 1.5rem;
+}
+
+.card h4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+footer {
+  padding: 3rem;
+  margin-top: 2rem;
+  line-height: 1.5rem;
+  color: #f2eee8;
+  background-color: #33220b;
+  box-shadow: 0 -0.15rem 0.15rem #bfab8d;
+  display: flex;
+  gap: 2.25rem;
+  justify-content: space-evenly;
+}
+
+footer .title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  display: block;
+  color: #f2eee8;
+}
+
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+  header .slogan {
+    grid-row-start: 2;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  main p {
+    text-align: justify;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-height: 640px) {
+  header {
+    height: fit-content;
+  }
+  header .slogan p {
+    padding: 0 2rem;
+    font-size: 1.5rem;
+  }
+  header .logo {
+    height: calc(100vh - 4rem);
+  }
+  header .logo img {
+    height: 33vh;
+  }
+  header .logo div {
+    font-size: 1.2rem;
+  }
+  header .logo div:first-of-type {
+    margin-top: 1.25rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-height: 320px) {
+  header .slogan {
+    justify-content: space-between;
+  }
+}
