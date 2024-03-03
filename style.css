@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: clamp(15px, 1.4vw, 21px);
+  font-size: clamp(14px, 1.4vw, 21px);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -45,22 +45,21 @@ header .logo {
 }
 
 header .logo img {
-  width: clamp(300px, 38vw, 500px);
+  width: clamp(240px, 22vw, 480px);
 }
 
 header .logo div {
+  margin-right: -0.25rem;
+  letter-spacing: 0.25rem;
   font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 1rem;
-  margin-right: -1rem;
 }
 
 header .logo div:first-of-type {
-  margin-right: 0;
   margin-top: 3rem;
-  font-size: 3.5rem;
-  font-weight: bolder;
-  letter-spacing: unset;
+  margin-right: -1rem;
+  letter-spacing: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 button {
@@ -185,6 +184,16 @@ footer a {
   .cards {
     grid-template-columns: 1fr;
   }
+  header .logo div {
+    margin-right: -0.2rem;
+    letter-spacing: 0.2rem;
+    font-size: 1.8rem;
+  }
+  header .logo div:first-of-type {
+    margin-right: -0.8rem;
+    letter-spacing: 0.8rem;
+    font-size: 2.8rem;
+  }
 }
 
 @media (max-height: 640px) {
@@ -199,14 +208,16 @@ footer a {
     height: calc(100vh - 4rem);
   }
   header .logo img {
-    height: 33vh;
+    height: min(33vh, 6rem);
   }
   header .logo div {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
   header .logo div:first-of-type {
     margin-top: 1.25rem;
-    font-size: 2.5rem;
+    margin-right: -0.75rem;
+    letter-spacing: 0.75rem;
+    font-size: 2rem;
   }
 }
 
