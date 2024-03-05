@@ -55,7 +55,7 @@ header .logo div {
 }
 
 header .logo div:first-of-type {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   margin-right: -1rem;
   letter-spacing: 1rem;
   font-size: 3rem;
@@ -75,7 +75,7 @@ button:hover {
 }
 
 main {
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 main p {
@@ -87,11 +87,11 @@ main p {
 .separator {
   height: 2rem;
   width: fit-content;
-  margin: 4.5rem auto 2rem auto;
+  margin: 4.5rem auto 3rem auto;
 }
 
 .separator:first-of-type {
-    margin-top: 3rem;
+    margin-top: 2.5rem;
 }
 
 .separator img {
@@ -118,7 +118,7 @@ h2 {
 .card {
   padding: 0.5rem;
   background-color: #fbfaf8;
-  box-shadow: 0.15rem 0.15rem 0.15rem #bfab8d;
+  box-shadow: 0.15rem 0.15rem 0.5rem #bfab8d;
   line-height: 1.5rem;
 }
 
@@ -136,11 +136,11 @@ ul {
 
 footer {
   padding: 3rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
   line-height: 1.5rem;
   color: #f2eee8;
   background-color: #33220b;
-  box-shadow: 0 -0.15rem 0.15rem #bfab8d;
+  box-shadow: 0 -0.15rem 0.5rem #bfab8d;
   display: flex;
   gap: 2.25rem;
   justify-content: space-evenly;
@@ -171,6 +171,9 @@ footer a {
     text-align: justify;
     overflow-wrap: break-word;
     hyphens: auto;
+  }
+  .separator:first-of-type {
+    margin-top: 0;
   }
 }
 
