@@ -33,6 +33,7 @@ header .slogan p {
   padding: 0 3rem;
   font-size: 2rem;
   text-align: center;
+  text-wrap: balance;
 }
 
 header .logo {
@@ -50,8 +51,8 @@ header .logo img {
 }
 
 header .logo div {
-  margin-right: -0.25rem;
-  letter-spacing: 0.25rem;
+  margin-right: -0.35rem;
+  letter-spacing: 0.35rem;
   font-size: 2rem;
 }
 
@@ -83,11 +84,13 @@ main p {
   max-width: 81ch;
   margin: 1rem auto;
   line-height: 1.5rem;
+  text-wrap: pretty;
 }
 
 .separator {
+  display: block;
   height: 2rem;
-  width: fit-content;
+  width: 100%;
   margin: 4.5rem auto 3rem auto;
 }
 
@@ -95,18 +98,10 @@ main p {
     margin-top: 2.5rem;
 }
 
-.separator img {
-  height: 100%;
-}
-
-.separator ~ h2 {
-  margin-top: 0;
-  margin-bottom: 2rem;
-}
-
 h2 {
   text-align: center;
   font-size: 2.5rem;
+  text-wrap: balance;
 }
 
 .cards {
@@ -170,7 +165,6 @@ footer a {
   }
   main p {
     text-align: justify;
-    overflow-wrap: break-word;
     hyphens: auto;
   }
   .separator:first-of-type {
@@ -189,8 +183,6 @@ footer a {
     grid-template-columns: 1fr;
   }
   header .logo div {
-    margin-right: -0.2rem;
-    letter-spacing: 0.2rem;
     font-size: 1.8rem;
   }
   header .logo div:first-of-type {
