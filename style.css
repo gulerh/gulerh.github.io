@@ -88,10 +88,12 @@ main p {
 }
 
 .separator {
-  display: block;
+  border: none;
   height: 2rem;
-  width: 100%;
   margin: 4.5rem auto 3rem auto;
+  background: no-repeat url(logo.svg);
+  background-size: contain;
+  background-position: center;
 }
 
 .separator:first-of-type {
