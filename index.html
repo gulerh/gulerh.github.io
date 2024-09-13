@@ -16,6 +16,11 @@
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="keywords" content="Comptabilité, Resources humaines, RH, Paie, Administratif"/>
     <meta name="robots" content="index,follow"/>
+    <title>Harmonie Gestion</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="canonical" href="https://www.harmonie-gestion.fr"/>
+    <script defer src="upup.min.js"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org/",
@@ -37,10 +42,6 @@
         "telephone": "+33766849093"
       }
     </script>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="manifest" href="manifest.json"/>
-    <link rel="canonical" href="https://www.harmonie-gestion.fr"/>
-    <title>Harmonie Gestion</title>
   </head>
   <body>
     <header>
@@ -133,12 +134,13 @@
         <div>Lundi-Vendredi 09:00-17:00</div>
       </div>
     </footer>
-    <script src="upup.min.js"></script>
     <script>
-      UpUp.start({
-        "cache-version": "v4",
-        "content-url": "index.html",
-        "assets": ["style.css", "logo.svg", "montserrat.woff2"]
+      window.addEventListener("load", () => {
+        UpUp.start({
+          "cache-version": "v4",
+          "content-url": "index.html",
+          "assets": ["style.css", "logo.svg", "montserrat.woff2"]
+        });
       });
     </script>
   </body>
