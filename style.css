@@ -197,9 +197,6 @@ footer a {
     text-align: justify;
     hyphens: auto;
   }
-  .separator:first-of-type {
-    margin-top: 0;
-  }
 }
 
 @media (max-width: 720px) {
